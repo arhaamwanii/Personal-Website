@@ -1,0 +1,46 @@
+*{
+    background-color: black;
+    color: white;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+/* HANDS */
+
+.left-hand{
+    display: inline;
+    position: absolute;
+    left: -300px;
+    animation: slide-in 3s forwards; /* Apply the animation */
+}
+
+/* .right-hand{
+    display: inline;
+    float: right;
+    right: -300px;
+    animation: slide in 3s ;
+} */
+
+.right-image {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+}
+
+
+
+.left-hand{
+    position: absolute;
+    left: -300px; /* Start the image outside the left side of the screen */
+     /* Center the image vertically */
+}
+
+@keyframes slide-in {
+    to {
+        left: 0%; /* Move the image to the center of the screen */
+    }
+}
