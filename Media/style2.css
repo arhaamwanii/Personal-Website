@@ -13,7 +13,7 @@ body {
 .right-image {
     /* width: 100px;
     height: 100px; */
-    background-size: cover;
+    /* background-size: cover; */
     position: absolute;
     top: 50%;
     animation-duration: 2s;
@@ -23,24 +23,24 @@ body {
 
 .left-image {
     background: url('path/to/left-image.jpg') center center/cover;
-    left: -100px; /* Initial position outside the left side of the screen */
+    left: -300px; /* Initial position outside the left side of the screen */
     animation-name: slide-in-left;
 }
 
 .right-image {
     background: url('path/to/right-image.jpg') center center/cover;
-    right: -100px; /* Initial position outside the right side of the screen */
+    right: -300px; /* Initial position outside the right side of the screen */
     animation-name: slide-in-right;
 }
 
 @keyframes slide-in-left {
     to {
-        left: 50px; /* Final position, adjust as needed */
+        left: 0px; /* Final position, adjust as needed */
     }
 }
 
 @keyframes slide-in-right {
     to {
-        right: 50px; /* Final position, adjust as needed */
+        right: 0px; /* Final position, adjust as needed */
     }
 }
