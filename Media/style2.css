@@ -1,13 +1,13 @@
-body {
+/* body {
     margin: 0;
     overflow: hidden;
     background: black;
-}
+} */
 
-.sliding-container {
+/* .sliding-container {
     display: flex;
     justify-content: space-between;
-}
+} */
 
 .left-image,
 .right-image {
@@ -19,6 +19,7 @@ body {
     animation-duration: 2s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
+    background-color: transparent;
 }
 
 .left-image {
