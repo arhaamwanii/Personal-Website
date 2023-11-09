@@ -139,22 +139,25 @@ a:hover{
 }
 
 .menu-links.open{
-    //
+    /*this will target the elements with the class menu-links and open */
     max-height: 300px;
 }
 
-.hamburger-icon.open span:first-child{
-    transform: rotate(45deg) translate(10px , 5px);
-}
 
-.hamburger-icon.open span:nth-child(2){
-    opacity: 0;
-}
-.hamburger-icon.open span:last-child{
-    transform: rotate(-45deg) translate(10px , -5px);
-}
+    .hamburger-icon.open span:first-child{
+        transform: rotate(45deg) translate(10px , 5px);
+    }
 
-.hamburger-icon span:first-child{
-    transform: none;
-    opacity: 1;
-}
+    .hamburger-icon.open span:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger-icon.open span:last-child{
+        transform: rotate(-45deg) translate(10px , -5px);
+    }
+
+    .hamburger-icon span:first-child{
+        transform: none;
+        opacity: 1;
+    }
+
+/* this will change the the visilty of the spans and amke one of them dissappear */

@@ -1,3 +1,5 @@
+/* NORMAL NAV TO HAMBURGER CHANGE */
+
 @media screen and (max-width: 1200px) {
     #desktop-nav{
         display: none;
@@ -6,4 +8,6 @@
         display: flex;
     }
 }
+/* this makes the original nav bar dissappear, chnage the hambuger nav from the display none to display flex - not the inside one but the outer three lines(spans)*/
+
 
