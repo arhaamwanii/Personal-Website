@@ -82,15 +82,14 @@ a:hover{
 
 
 
-
 #hamburger-nav{
     display: none;
+    /* keeps the hamburger hidden unless we ask for it to be seen by making   */
 }
 
 .hamburger-menu{
     position: relative;
     display: inline-block;
-
 }
 
 .hamburger-icon{
@@ -154,5 +153,4 @@ a:hover{
 .hamburger-icon span:first-child{
     transform: none;
     opacity: 1;
-
 }
