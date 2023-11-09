@@ -1,45 +1,45 @@
-body {
+.bg {
     margin: 0;
     overflow: hidden;
     background: black;
 }
 
-/* .sliding-container {
-    display: flex;
-    justify-content: space-between;
-} */
-
 .left-image,
 .right-image {
-    /* width: 100px;
-    height: 100px; */
-    /* background-size: cover; */
     position: absolute;
     top: 40%;
-    animation-duration: 2s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
     background-color: transparent;
 }
 
 .left-image {
-    left: -300px; /* Initial position outside the left side of the screen */
-    animation-name: slide-in-left;
+    left: -800px;
+    animation: slide-in-left 2s ease-out forwards;
 }
 
 .right-image {
-    right: -300px; /* Initial position outside the right side of the screen */
-    animation-name: slide-in-right;
+    right: -800px;
+    animation: slide-in-right 2s ease-out forwards;
 }
 
 @keyframes slide-in-left {
     to {
-        left: 0px; /* Final position, adjust as needed */
+        left: 0px;
     }
 }
 
 @keyframes slide-in-right {
     to {
-        right: 0px; /* Final position, adjust as needed */
+        right: 0px;
     }
 }
+
+.img-left,
+.img-right {
+    height: 400px;
+    width: 835px;
+    object-fit: cover;
+}
+
+
+
+
