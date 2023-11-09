@@ -165,3 +165,9 @@ a:hover{
 
 /* SECTIONS */
 
+
+section{
+    padding-top: 4vh;
+    height: 96vh;
+    
+}
