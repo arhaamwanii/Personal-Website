@@ -93,12 +93,15 @@ a:hover{
 }
 
 .hamburger-icon{
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* makes the spans inside the box created, and makes a flex box of it and aligns its vertically */
     height: 24px;
     width: 30px;
     cursor: pointer;
+    /* it makes a box of size of 24px and width 30px in which the span are present */
 }
 
 
@@ -107,7 +110,7 @@ a:hover{
     height: 2px;
     background-color: black;
     transition: all 0.3 ease-in-out;
-
+    /* occupies the whole box an makes the height of the legth 2px */
 }
 
 .menu-links{
@@ -136,6 +139,7 @@ a:hover{
 }
 
 .menu-links.open{
+    //
     max-height: 300px;
 }
 
