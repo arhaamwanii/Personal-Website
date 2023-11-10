@@ -412,4 +412,7 @@ border-color:rgb(163, 163, 163) ;
 footer{
     margin-bottom: 60px;
 }
+.btn{
+    cursor: pointer;
+}
 
