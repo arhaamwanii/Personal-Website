@@ -169,5 +169,206 @@ a:hover{
 section{
     padding-top: 4vh;
     height: 96vh;
-    
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+    display: flex;
+}
+.section-container{
+    display: flex;
+}
+
+
+/*PROFILE SECTION */
+
+#profile{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section__pic-container{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section__text{
+    align-self: center;
+    text-align: center;
+
+}
+
+.section__text p{
+    font-weight: 600;
+
+}
+
+.section__text__p1{
+    text-align: center;
+}
+.section__text__p2{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socials-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+
+/* BUTTONS */
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.btn{
+    font-weight: 600;
+    transform: all 300 ease;
+    padding: 1rem;
+    width: 8rem ;
+    border-radius: 2rem;
+}
+
+.btn-color-2 .btn-color-1{
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-2:hover
+.btn-color-1:hover{
+   cursor: pointer;
+}
+
+.btn-color-2{
+    background-color: rgb(53, 53, 53);
+}
+.btn-color-2 a{
+    color: white;
+    text-decoration: none;
+}
+
+.btn.btn-color-1:hover{
+    color: white;
+    background-color: rgb(53 , 50, 53);
+    border: rgb(255, 255, 255);
+}
+
+.btn-color-2:hover{
+    border: rgb(255, 255, 255);
+}
+
+.btn-container{
+    gap: 1rem;
+}
+
+
+
+
+/* ICONS */
+
+.icon{
+    cursor: pointer;
+    height: 2rem;
+}
+
+
+/* ABOUT SECTION */
+
+#about{
+    position: relative;
+}
+
+.about-containers{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers, .about-details-container{
+    display: flex;
+}
+
+.about-pic{
+    border-radius: 2rem;
+}
+
+.arrow{
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container{
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border:rgb(53, 53, 53) 0.1rem solid ;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.section-container{
+    gap: 4rem;
+    height: 80%;
+}
+.section-container{
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.align{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* EXPERIECE CSS TO BE USED AHEAD */
+
+/* PROJECTS SECTION */
+
+#projects{
+    position: relative;
+    display: flex;
+}
+
+
+.color-container{
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+}
+
+.project-img{
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.project-title{
+    margin: 1rem;
+    color: black;
+}
+.project-btn{
+color: black;
+border-color:rgb(163, 163, 163) ;
 }
