@@ -1,13 +1,157 @@
+@media screen and (max-width: 1400px) {
+   #prpfoile{
+    height: 83vh;
+    margin-bottom: 6rem ;
+   }
+   .about-container{
+    flex-wrap: wrap;
+   }
+}
+
+
+
 /* NORMAL NAV TO HAMBURGER CHANGE */
 
+
+
 @media screen and (max-width: 1200px) {
+    
     #desktop-nav{
         display: none;
     }
     #hamburger-nav{
         display: flex;
     }
+    #experience,
+    #experience-details-container{
+        margin-top: 2rem;
+    }
+    #profile,
+    .secttion-container{
+        display: block;
+    }
+    .arrow{
+        display: none;
+    }
+    section,
+    .section-container{
+        height: fit-content;
+    }
+    section{
+        margin: 0 5%;
+    }
+    .section__pic-container{
+        width: 175px;
+        height: 175px;
+        margin: 0 auto 2rem;
+    }
+    .about-container{
+        margin-top: 0;
+    }
 }
 
 /* this makes the original nav bar dissappear, chnage the hambuger nav from the display none to display flex - not the inside one but the outer three lines(spans)*/
 
+
+
+@media screen and (max-width:600px) {
+    /* #contact,
+    footer{
+        height: 40vh;
+    } */
+    #profile{
+        height: 83vh;
+        margin-bottom: 0;
+    }
+    article{
+        font-size: 1rem;
+    }
+    footer nav{
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+    
+    .about-container,
+    .contact-info-upper-container,
+    .btn-container{
+        flex-wrap: wrap;
+        width:80vw;
+        gap: 10px;
+        
+    }
+    .contact-info-container{
+        margin: 0;
+    }
+    .contact-info-container p,
+    .nav-links li a {
+        font-size: 1rem;
+    }
+    .experience-sub-titile{
+        font-size: 1.25rem;
+    }
+    .logo{
+        font-size: 1.rem;
+    }
+    .nav-links{
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;         
+    }
+    .section__pic-container{
+        width: auto;
+        justify-content: center;
+    }   
+    .section__text__p2{
+        font-size: 1.25rem;
+    }
+    .title{
+        font-size: 2rem;
+    }
+
+    /* FIX */
+
+    .text-container{
+        text-align: center;
+    }
+    .section__text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .btn-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .footer{
+        margin-top: 0px;
+    }
+    .experience-details-container{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+    .about-pic{
+        object-fit: contain;
+    }
+
+    /* Project SECTION */
+
+    .section-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-containers{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .space{
+        margin-top: 100px;
+    }
+}

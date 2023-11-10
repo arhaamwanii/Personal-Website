@@ -19,7 +19,7 @@
             <ul class="nav-links">
                 <!-- "#" is used to create an hyperlink for a page in the same document -->
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
+                <!-- <li><a href="#experience">Experience</a></li> -->
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -43,7 +43,7 @@
 
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()" >About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <!-- <li><a href="#experience" onclick="toggleMenu()">Experience</a></li> -->
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
@@ -63,9 +63,9 @@
         <!--TEXT -->
 
         <div class="section__text">
-            <p class="section__text__p1">Hello, im</p>
+            <p class="section__text__p1"></p>
             <h1 class="title"> Arhaam Wanii</h1>
-            <p class="section__text__p2">Full Stack Devloper</p>
+            <p class="section__text__p2">Full Stack Dev</p>
         
         <!-- 2 - BUTTON  -->
 
@@ -75,15 +75,16 @@
                 </button>
 
                 <button class="btn btn-color-2"> 
-                    <a href="mailto:arhamwani765@gmail.com">Let's Connect</a>
+                    <a href="mailto:arhamwani765@gmail.com">Contact Me</a>
                 </button>
             </div>
 
         <!-- SOCIAL LINKS -->
-            <div id="socials-container">
+            <div id="socials-container" style="padding-top:20px ;">
             
                 <img src="assets/github.png" alt="my github profile" class="icon" onclick="location.href='https://github.com/arhaamwanii '" style="cursor: pointer;">
                 <img src="assets/Emblem-Instagram-removebg-preview.png" alt="my instagram profile" class="icon" onclick="window.location.href='https://instagram.com/arhaamwanii/'" style="cursor: pointer;">
+                <img src="assets/x lite circle.png" alt="my twitter profile picture" class="icon" onclick="window.location.href='https://twitter.com/arhaamwanii/'" style="cursor: pointer;">
                 
             </div>
         </div>
@@ -94,28 +95,41 @@
 
 
     <div class="align">
-        <p class="section__text__p1">Get To Know Me</p>
+        <p class="section__text__p1"> <!--TEXT ABOVE ABOUT ME-->   </p>
         <h1 class="title">About Me</h1>
     </div> 
 
 <section id="about">
  
     <div class="section-container">
-        <div class="section__pic-container">
+        <!-- <div class="section__pic-container">
             <img src="assets/about-pic.png" alt="Profile Picture" class="about-pic">
-        </div>
+        </div> -->
+
+        <img src="assets/head cage art bg remove.png" alt="">
+
+
        <div class="about-details-container">
             <div class="about-containers">
-                <div class="details-container">
-                    <img src="assets/experience.png" alt="experience icon" class="icon">
-                    <h3>Experience</h3>
-                    <p>2 Months - All IN <br> doing nothing but programming</p>
+                <!-- time -->
+                <div class="details-container" style="width: 10rem;">
+                    <img src="assets/clock icon .webp" alt="experience icon" class="icon">
+                    <h3>    <div id="time"></div></h3>
+                    <p><br>My Time<br>📍INDIA  </p>
                 </div>
+                <!-- collabration open -->
                 <div class="details-container">
                     <img src="assets/experience.png" alt="experience icon" class="icon">
                     <h3>Open For Collabrations</h3>
-                    <p>Unlimited Energy <br> </p>
+                    <p><br>Always Available on  Discord  <br> </p>
                 </div>
+                <!-- experience -->
+                <div class="details-container">
+                    <img src="assets/experience.png" alt="experience icon" class="icon">
+                    <h3>Experience</h3>
+                    <p><br>3 Months<br><br>Straight Up 18 hr's a day <br></p>
+                </div>
+
             </div>
             <div class="text-container">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, delectus a eos dolor consequatur pariatur voluptatum exercitationem dolorum sint suscipit quas perferendis placeat ut, adipisci praesentium quos ex, magnam voluptate? Sint laborum voluptatum vero numquam, minima et rerum in sapiente ipsum soluta temporibus cupiditate autem veritatis, ea consequuntur, doloribus voluptatibus!
@@ -123,11 +137,14 @@
        </div> 
     </div>
     <!--next page arrow  -->
-    <img src="assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='#project'">
+
+    <img src="assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='#contact'">
 
 </section>
 
 <!-- EXPERIENCE -->
+
+
 <!-- <section id="experience">
     <p class="section__text__p1">Explore My</p>
     <h1 class="title">Experience</h1>
@@ -146,14 +163,21 @@
     </div>
 </section> -->
 
+
+
 <!-- PROJECTS SECTION -->
+
+
+<div class="space">
+
+</div>
 
 <div class="align">  
     <p class="section__text__p1">Browse My Recents</p>
     <h1 class="title">Projects</h1>
 </div>
 
-    <section id="Projects">
+    <section id="projects">
  
 
         <div class="experience-details-container">
@@ -202,19 +226,22 @@
                     </button>
                 </div>
             </div>
+
         </div>
                 <img src="assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='#contact'">
         </div>
     </section>
 
     <!-- CONTACT -->
+
+    <span id="contact"></span>
+
     <div class="align">
         <p class="section__text__p1">Get in Touch</p>
         <h1>Contact Me</h1>
     </div>
 
     
-   
 
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
@@ -225,18 +252,18 @@
 
         <!-- <div class="contact-info-upper-container"> -->
             <div class="contact-info-container">
-                <img src="assets/github.png" alt="github icon" class="icon contact-icon">
-                <p><a href="https://github.com/arhaamwanii">GitHub</a></p>
+                <img src="assets/discord logo balck.webp" alt="discord icon" class="icon contact-icon">
+                <p><a style="margin-left: 4px;" href="https://github.com/arhaamwanii">@arhaamw</a></p>
             </div>
         </div>
 
 
-    <footer class="align"> <p> by - Arhaam</p></footer>
+    <footer class="align" style="margin-top: 6rem;"> <p> by - Arhaam</p></footer>
 
 
 
-
-    <!-- <div id="time"></div> -->
+    <div id="time"></div>
+    
     <script src="index.js"></script>
 
 </body>
