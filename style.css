@@ -18,6 +18,8 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+/*  */
+
 html{
     scroll-behavior: smooth;
     /* so that it wont just jump straight to the next point we specify it would go as that we scrolled there */   
