@@ -1,7 +1,7 @@
 import React from 'react'
-import { useState } from 'react'
 
-export const Gameboard = (onSelectSquare , activePlayerSymbol) => {
+
+export const Gameboard = ({onSelectSquare }) => {
 
 const initialGameBoard=[
     [null , null , null],
@@ -10,16 +10,16 @@ const initialGameBoard=[
 ]
 
 
-   const [gameBoard , setGameBoard] = useState(initialGameBoard)
+//    const [gameBoard , setGameBoard] = useState(initialGameBoard)
 
-   function handleSelectSquare(rowIndex , colIndex  ){
-    setGameBoard((prevGameBoard) => {
-        const updatedBoard = [...prevGameBoard.map(innerArray => [...innerArray])];
-        updatedBoard[rowIndex][colIndex ] = activePlayerSymbol;
-        return updatedBoard
-    } )
-    onSelectSquare();
-   }
+//    function handleSelectSquare(rowIndex , colIndex  ){
+//     setGameBoard((prevGameBoard) => {
+//         const updatedBoard = [...prevGameBoard.map(innerArray => [...innerArray])];
+//         updatedBoard[rowIndex][colIndex ] = activePlayerSymbol;
+//         return updatedBoard
+//     } )
+//     onSelectSquare();
+//    }
   return (
     <>
 
@@ -28,7 +28,7 @@ const initialGameBoard=[
         <ol>
             {row.map((playerSymbol , colIndex) => 
             <li key={colIndex}>
-                <button onClick={() => handleSelectSquare(rowIndex , colIndex)} >{playerSymbol}</button>
+                <button onClick={onSelectSquare} >{playerSymbol}</button>
             </li> )}
         </ol>
         </li> )}
@@ -38,8 +38,9 @@ const initialGameBoard=[
   )
 }
 
-//state
-//shit is fucked up less go
+
+//shit is fucked up less go, the code we wrote in the gameoard if would be written in the app.jsx all the components would have acess to it
+//the highlighted button is not as clean as it
     {/* takes array as an input*/}
     {/* we need key identify it in a uique way*/}
 //creating the ann arry which contaitns the game board

@@ -26,7 +26,8 @@ if (isEditting){
 
   return (
     
-    <li className={isAcitive ? "active" : null }>
+    <li className={isAcitive ? "active" : undefined }>
+
     <span>
         {showInput}
       <span className="player-symbol">{symbol}</span>
@@ -37,10 +38,13 @@ if (isEditting){
   )
 }
 
+//most of the code we are writting is suboptimal code
+
+
+//shit can be used to Synamicall  y
 //code
 //SWITCHING BETWEEN PLAYERS ON THE CHESS BOARD 
 //HIGHLIGHTING THE PLAYER WITH TURN NAME -- ADDING THE CLASS TO THE CLASS PLAYER
 //WE NEED TO KNOW ABOU THE CURRENTLY ACTIVE PLAYER -- GIVE TWO SPEREATE COMPONENT ACESS TO THE SAME INFO
 
-
-//LIFTING THE
+//when we log the text on the button which is inside the gameboard we pass a value to it from the parent compnent such that it swithces up the value which we also used in the gameboard
