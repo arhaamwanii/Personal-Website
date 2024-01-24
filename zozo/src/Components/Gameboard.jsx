@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 
-export const Gameboard = (onSelectSquare) => {
+export const Gameboard = (onSelectSquare , activePlayerSymbol) => {
 
 const initialGameBoard=[
     [null , null , null],
@@ -15,7 +15,7 @@ const initialGameBoard=[
    function handleSelectSquare(rowIndex , colIndex  ){
     setGameBoard((prevGameBoard) => {
         const updatedBoard = [...prevGameBoard.map(innerArray => [...innerArray])];
-        updatedBoard[rowIndex][colIndex ] = 'X';
+        updatedBoard[rowIndex][colIndex ] = activePlayerSymbol;
         return updatedBoard
     } )
     onSelectSquare();
@@ -28,11 +28,10 @@ const initialGameBoard=[
         <ol>
             {row.map((playerSymbol , colIndex) => 
             <li key={colIndex}>
-                <button onClick={() => handleSelectSquare(rowIndex , colIndex)}>{playerSymbol}</button>
+                <button onClick={() => handleSelectSquare(rowIndex , colIndex)} >{playerSymbol}</button>
             </li> )}
         </ol>
         </li> )}
-     
     </ol>  
 
     </>
@@ -40,6 +39,7 @@ const initialGameBoard=[
 }
 
 //state
+//shit is fucked up less go
     {/* takes array as an input*/}
     {/* we need key identify it in a uique way*/}
 //creating the ann arry which contaitns the game board

@@ -81,4 +81,9 @@ we need to know which player is acitve and that needs to be known in more that o
 inorder to do that we need to get acess
 
 so we dont manage the state in the compnents but in the closest parent component
-so in this case we put it in the app Component --
+so in this case we put it in the app Component
+
+NULL VS UNDEFINED 
+
+undefined is a self assigned value 
+null is when we delibretly assign value
