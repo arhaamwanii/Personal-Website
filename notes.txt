@@ -1,0 +1,64 @@
+                                        REACT   
+PUBLIC FOLDER
+- files in there are server directly to the user we dont need to specify there name and file location 
+- dont need to specify there location 
+- also directly accesable in index html 
+
+USESATATE
+-  useState return us an array which has two values in it the main variable and the editor to the main value
+to do : "if is editting is true/false which is tob "
+
+HANDLE
+-when writing a function we use handle before it tp specfy how it is a 
+- is used to specify that this is a function that is going to trigger a change
+
+HOOK IMPORT
+-when using a state you have to inmport the state in each component
+-imort states in each components
+-each compnent manages its own useState
+
+SWITTICHING BOOEAIN IN JS   
+-to switch the value, of the boolein we can do is change the state where were we lanuch a anonumous fumction which switchs the value using "!"
+code: "prevValue => !prevVlaue" this should switch the value for what it is now everythime this anoumous function is called
+
+When updating the the state based on the previous value of the state,
+->you should not do it directly you should pass you should pass on  a function which whould then do the same
+->doing it like this is the best practise
+->state updation is schedules by react, sheduling
+->when the state change is shedules it looks for the previous value before that time, when we schedule like the (!isEditting) we are using the inital value not the value we have after some other state chage might have took place 
+
+- if we use the anonymous function method then in that case we are using the  value in that instant 
+
+
+
+USiNG OR REUSING COMPONENT
+-change in one callback of the component wont affect other
+-creates new isolated compnent
+
+TERNARY EXPRESSION 
+{CODITION ? ifTrue : elseifflase}
+
+DEFAULT-VALUE
+it kind of allows us to set the itnital value to the input field or something  but then allows the user to change it also 
+
+VALUE
+in case of value you are done no change and you are the one who controls the value it is not interactible
+
+ON CHANGE
+-> wherver a change happpens in a given element, trigger a function or something
+-> it also reurns a object to the triggered function which contains the change which took place in the element
+
+
+TWO WAY BINDING -- UPDATING STATE BASED ON THERE PREVIOUD value
+    //here in this case we took the value from th  e input field using the onChange which gives the triggered function acess to the value that was cahnged- 
+    //then we take that value and put in a state -- this state has a intial value we put in the component callback - then everytime a onchange calls the function it also chages the value of this variable which we set as the NEW value of the VALUE atteibute.
+
+    //in order to get acess to the value it passed on to the function we can use "event.target.value" 
+
+.MAP
+it creates a new array by performing some function on each array
+we can then make a new array based of off that array beased of off that we can also iterate on each value in there
+for each is maily used in diff
+
+
+
