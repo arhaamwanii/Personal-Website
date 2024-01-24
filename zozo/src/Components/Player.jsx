@@ -33,13 +33,14 @@ if (isEditting){
       <span className="player-symbol">{symbol}</span>
     </span>
     <button onClick={handleEditClick}>{isEditting ? "Save" : "Edit" }</button>
-    
     </li>
 
   )
 }
 
-//active class
+//SWITCHING BETWEEN PLAYERS ON THE CHESS BOARD 
+//HIGHLIGHTING THE PLAYER WITH TURN NAME -- ADDING THE CLASS TO THE CLASS PLAYER
+//WE NEED TO KNOW ABOU THE CURRENTLY ACTIVE PLAYER -- GIVE TWO SPEREATE COMPONENT ACESS TO THE SAME INFO
 
 
-
+//LIFTING THE

@@ -73,3 +73,12 @@ so if we try to do it at more thna one place it can cause problims
 states that depend on an oubjectg or an array should be updated in imutable way 
 i.e we first need to ceate a copy of the array or object that whose state we need to update
 - also coz of the same thing that was with the callback to update the value based on the previous value coz react cant directly do anything directly so -- it schedueles them based of the value in that instat so if we do this noramally and we end updating the state of th e c
+
+
+LIFTING THE STATE UP 
+
+we need to know which player is acitve and that needs to be known in more that one comonent so in order to achieve that we can do that 
+inorder to do that we need to get acess
+
+so we dont manage the state in the compnents but in the closest parent component
+so in this case we put it in the app Component --

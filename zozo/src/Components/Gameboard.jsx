@@ -1,14 +1,14 @@
 import React from 'react'
 import { useState } from 'react'
 
-export const Gameboard = () => {
+export const Gameboard = (onSelectSquare) => {
 
 const initialGameBoard=[
     [null , null , null],
     [null , null , null],
     [null , null , null]
 ]
-//to store the value of the box, o x 
+
 
    const [gameBoard , setGameBoard] = useState(initialGameBoard)
 
@@ -18,8 +18,7 @@ const initialGameBoard=[
         updatedBoard[rowIndex][colIndex ] = 'X';
         return updatedBoard
     } )
-    //if we have to create a copy of
-
+    onSelectSquare();
    }
   return (
     <>
