@@ -9,41 +9,40 @@ const initialGameBoard=[
     [null , null , null]
 ]
 //to store the value of the box, o x 
+
    const [gameBoard , setGameBoard] = useState(initialGameBoard)
 
-   function handleSelectSquare(rowIndex , colIndex ,  symbol ){
+   function handleSelectSquare(rowIndex , colIndex  ){
     setGameBoard((prevGameBoard) => {
-        prevGameBoard[rowIndex][colIndex ] = 'x';
-        return prevGameBoard
+        const updatedBoard = [...prevGameBoard.map(innerArray => [...innerArray])];
+        updatedBoard[rowIndex][colIndex ] = 'X';
+        return updatedBoard
     } )
-    //to update what it contains
-    //
-   }
+    //if we have to create a copy of
 
+   }
   return (
     <>
 
     <ol id='game-board'>
-        {initialGameBoard.map((row , rowIndex) => <li key={rowIndex}>
+        {gameBoard.map((row , rowIndex) => <li key={rowIndex}>
         <ol>
-            
-            {row.map((playerSymbol , colIndex) => <li key={colIndex}><button>{playerSymbol}</button></li> )}
+            {row.map((playerSymbol , colIndex) => 
+            <li key={colIndex}>
+                <button onClick={() => handleSelectSquare(rowIndex , colIndex)}>{playerSymbol}</button>
+            </li> )}
         </ol>
         </li> )}
      
     </ol>  
-    {/* takes array as an input*/}
-    {/* we need key identify it in a uique way*/}
+
     </>
   )
 }
 
-let myArrray = [1 , 3 , 54 ,3 ]
 
-myArrray.map((value) => {
-    console.log(value * 0)
-})
-
+    {/* takes array as an input*/}
+    {/* we need key identify it in a uique way*/}
 //creating the ann arry which contaitns the game board
 //the thing is that ecm
 //map is used to create/accepted 

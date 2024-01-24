@@ -69,6 +69,8 @@ else if we update it the other way we would be updating the old value and also i
 so if we try to do it at more thna one place it can cause problims
 
 
+//STATES
+states that depend on an oubjectg or an array should be updated in imutable way 
 
 
 
