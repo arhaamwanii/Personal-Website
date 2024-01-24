@@ -40,7 +40,7 @@ const initialGameBoard=[
   )
 }
 
-
+//state
     {/* takes array as an input*/}
     {/* we need key identify it in a uique way*/}
 //creating the ann arry which contaitns the game board

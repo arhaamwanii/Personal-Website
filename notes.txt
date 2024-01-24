@@ -51,7 +51,7 @@ ON CHANGE
 
 TWO WAY BINDING -- UPDATING STATE BASED ON THERE PREVIOUD value
     //here in this case we took the value from th  e input field using the onChange which gives the triggered function acess to the value that was cahnged- 
-    //then we take that value and put in a state -- this state has a intial value we put in the component callback - then everytime a onchange calls the function it also chages the value of this variable which we set as the NEW value of the VALUE atteibute.
+    //then we take that value and put in a state -- this state has a intial value we put in the component callback - then everytime a onchange calls the function it also chages the value of this variable which we set as the NEW value of the VALUE attribute
 
     //in order to get acess to the value it passed on to the function we can use "event.target.value" 
 
@@ -71,6 +71,5 @@ so if we try to do it at more thna one place it can cause problims
 
 //STATES
 states that depend on an oubjectg or an array should be updated in imutable way 
-
-
-
+i.e we first need to ceate a copy of the array or object that whose state we need to update
+- also coz of the same thing that was with the callback to update the value based on the previous value coz react cant directly do anything directly so -- it schedueles them based of the value in that instat so if we do this noramally and we end updating the state of th e c

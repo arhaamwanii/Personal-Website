@@ -33,10 +33,13 @@ if (isEditting){
       <span className="player-symbol">{symbol}</span>
     </span>
     <button onClick={handleEditClick}>{isEditting ? "Save" : "Edit" }</button>
+    
+    </li>
 
-  </li>
   )
 }
+
+//active class
 
 
 
