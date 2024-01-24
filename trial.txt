@@ -1,4 +1,0 @@
-making small compoenets instead
-the whole comonent gets reexecuted instead of that songle file when intending to rerender
-
-having a sigle compoenbt the componet 
