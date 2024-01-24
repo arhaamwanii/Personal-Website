@@ -14,9 +14,9 @@ function App() {
         <Player intialName="Enter Name " symbol="X" />
         <Player intialName="Enter Name"symbol="O"/>
         </ol>
-
+        <Gameboard/>
       </div>
-      <Gameboard/>
+   
       <h1>React Tic-Tac-Toe</h1>
     </main>
   )

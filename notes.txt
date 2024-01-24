@@ -60,5 +60,15 @@ it creates a new array by performing some function on each array
 we can then make a new array based of off that array beased of off that we can also iterate on each value in there
 for each is maily used in diff
 
+ARRAYS
+arrays are technincally objects
+if your state is an object or an  array you update it in an imutable way
+-i.e we first create a copy of our object or array and then use that to update the value
+make a copy first  -- then update that
+else if we update it the other way we would be updating the old value and also immediately
+so if we try to do it at more thna one place it can cause problims
+
+
+
 
 
