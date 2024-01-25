@@ -28,7 +28,7 @@ When updating the the state based on the previous value of the state,
 ->when the state change is shedules it looks for the previous value before that time, when we schedule like the (!isEditting) we are using the inital value not the value we have after some other state chage might have took place 
 
 - if we use the anonymous function method then in that case we are using the  value in that instant 
-
+hello
 
 
 USiNG OR REUSING COMPONENT
