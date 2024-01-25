@@ -30,6 +30,7 @@ When updating the the state based on the previous value of the state,
 - if we use the anonymous function method then in that case we are using the  value in that instant 
 hello
 wallaikum assalam
+hello are u there
 
 
 USiNG OR REUSING COMPONENT
