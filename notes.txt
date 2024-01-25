@@ -31,7 +31,7 @@ When updating the the state based on the previous value of the state,
 hello
 wallaikum assalam
 hello are u there
-
+three
 
 USiNG OR REUSING COMPONENT
 -change in one callback of the component wont affect other
