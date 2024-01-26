@@ -36,6 +36,7 @@ four
 five
 six
 
+
 USiNG OR REUSING COMPONENT
 -change in one callback of the component wont affect other
 -creates new isolated compnent
@@ -92,3 +93,5 @@ NULL VS UNDEFINED
 
 undefined is a self assigned value 
 null is when we delibretly assign value
+
+imagine dewert haravrd with teeth
