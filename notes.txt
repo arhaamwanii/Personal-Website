@@ -93,5 +93,3 @@ NULL VS UNDEFINED
 
 undefined is a self assigned value 
 null is when we delibretly assign value
-
-imagine dewert haravrd with teeth
