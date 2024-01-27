@@ -38,7 +38,7 @@ const initialGameBoard=[
   )
 }
 
-
+//
 //shit is fucked up less go, the code we wrote in the gameoard if would be written in the app.jsx all the components would have acess to it
 //the highlighted button is not as clean as it
     {/* takes array as an input*/}
