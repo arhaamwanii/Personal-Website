@@ -97,6 +97,7 @@ null is when we delibretly assign value
 //
 ..
 //
+//like see if this dosent work we are pretty much fucked and there is 
 //
 //
 //
