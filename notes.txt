@@ -95,4 +95,3 @@ undefined is a self assigned value
 null is when we delibretly assign value
 even lets say there i
 s a project which you want to  build so how do you actaully go by building it see here is the thing it, all of these things they are just in my mind i have not really projected them out to be honest i have never really done any thing i have just sat around planning and fantisizing never actaually gone by to actually build a project and stuff it is all shit and the thing is that there is no such thing and there is a 
-this is the thing 
