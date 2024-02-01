@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 
-export const Player = ({intialName , symbol}) => {
+export const Player = ({intialName , symbol , isActive}) => { // recieveing the inf about which player is active
 
   const [isEditting , setIsEditting ] = useState(false)
   const [playerName  , setPlayerName ] = useState(intialName)
@@ -26,19 +26,15 @@ if (isEditting){
 
 
   return (
-    <div>
-
-        <span>
-          {showField}
-          <span className="player-symbol">{symbol} </span>
-        </span>
-        <button onClick={handleEditClick} >{isEditting ? "Save" : "Edit"}</button>
-
-    
-    </div>
-
-    
-  )
+  
+      <li className={isActive ? "active" : undefined}>
+                 <span>
+                  {showField}
+                  <span className="player-symbol">{symbol} </span>
+                </span>
+                <button onClick={handleEditClick} >{isEditting ? "Save" : "Edit"}</button>
+        </li>
+     )
 }
 
 

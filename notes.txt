@@ -151,6 +151,14 @@ when you need to change the value of the object and the state dont do it directl
 
 LIFTING STATE UP
 
+we manage the state in amcestor component to mke sure that they are accessable to all the child elemets or whereer they are used\
+
+
+.MAP
+
+it is  specifially designed for the interationover arrays while as FOR OF is a genral thing 
+
+
 
  
 

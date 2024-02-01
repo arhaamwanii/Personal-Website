@@ -1,6 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
-
 
 
 const initailGameBoard = [
@@ -9,16 +7,34 @@ const initailGameBoard = [
     [null, null , null]
 ]
 
-export const Gameboard = () => {
-    const [gameBoard , setGameBoard] = useState(initailGameBoard);
+export const Gameboard = ({onSelectSquare , turns }) => {
 
-    function handleSelectSquare(rowIndexRecieve , colIndexRecieve){
-        setGameBoard((prevGameBoard) => { //set game board which contains the copy of the value of the intial gameBoard -- we copy that
-            const updatedBoard = [...prevGameBoard.map(innerArray => [...innerArray])]
-            updatedBoard[rowIndexRecieve ][colIndexRecieve] = 'X'//where ever the click has took place change the value of the that place from null to X 
-            return updatedBoard;
-        });
+    let gameBoard = initailGameBoard;
+
+    for(const turn of turns){
+        const {square , player} = turn;
+        const { row , col} = square;
+
+        gameBoard[row][col] = player; //this line was failing 
     }
+    //every object will have a the symbol in
+    //mangage as many state as possible
+    
+    // const [gameBoard , setGameBoard] = useState(initailGameBoard); 
+
+
+    // function handleSelectSquare(rowIndexRecieve , colIndexRecieve){
+    //     setGameBoard((prevGameBoard) => { //set game board which contains the copy of the value of the intial gameBoard -- we copy that
+    //         const updatedBoard = [...prevGameBoard.map(innerArray => [...innerArray])]
+    //         updatedBoard[rowIndexRecieve ][colIndexRecieve] = activePlayerSymbol //where ever the click has took place change the value of the that place from null to X 
+    //         return updatedBoard;
+    //     });
+    //     onSelectSquare()// calling the F in the ancestor/app.jsx file which will switch the value form X to O or otherwise 
+    //     //in this code here is the info about which buttons  were clicked and what were there cordinates
+    // }
+
+
+
 
    
   return (
@@ -28,7 +44,7 @@ export const Gameboard = () => {
             {row.map((col, colIndex)  =>
              <li key={colIndex}>
 
-                 <button onClick={() => handleSelectSquare(rowIndex , colIndex)}>{col}</button> 
+                 <button onClick={() => onSelectSquare(rowIndex , colIndex)}>{col}</button> 
 
             </li> )}
         </ol>
@@ -42,8 +58,8 @@ export const Gameboard = () => {
 
 //hadleSectSquare, this function is used determine the value which will be shown on to the screen -- and will update the game board based on the prvios state of the gameboard -- in which case it also has to update the value inside of the intial game boad which we build to store the data
 //for this function to do change the value of the inital game board -- it needs to know exactly which value it has to change in that case we need to pass the location of the change which is in this case passed by row and col INDEX
-//updated board which 
-
+//updated board which
+//
 
 //          prevGameBoard[rowIndex ][colIndex]
 // as in this case what we have is that, prevGameBoard is just th  instance of the inital gameBoard we used  inside of this  funciton 
@@ -99,3 +115,4 @@ export const Gameboard = () => {
     //     })        
 
     // }
+
