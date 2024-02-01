@@ -112,3 +112,12 @@ lets say se need to save the data
 DIFFERENT TRAIL 2
 
 react is not fundametally -- doing any thing new it is just, using the state updation -- what react does it schedules when to execute these commands
+EG
+
+major example of this can be seen in just say 
+
+setState(!previousValue)
+setState(!previousValue)
+
+this code will not perform as you might expect it to -- i.e the value will return back to the value what it was before but it changes and dosen  retur back -- in this case react is whenever an callback for an rerender takes palce all the action which are not immediate are sheduled -- and at  the time of sheduling these we dont what or how the value is going to chnage so in that case --- react will chage the value based on the value it was beore not waht it would have been changed to later on -- so in oreder for this to not happen we have to delibretly call for the previous value
+
