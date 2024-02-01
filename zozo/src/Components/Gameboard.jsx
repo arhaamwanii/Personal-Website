@@ -38,7 +38,7 @@ const initialGameBoard=[
   )
 }
 
-/
+
 //shit is fucked up less go, the code we wrote in the gameoard if would be written in the app.jsx all the components would have acess to it
 //the highlighted button is not as clean as it
     {/* takes array as an input*/}
@@ -47,3 +47,5 @@ const initialGameBoard=[
 //the thing is that ecm
 //map is used to create/accepted 
 //index is not tied to the data it is going to be tiend to the location of the data 
+
+/// in the game board component we should get the active player symbol prop
