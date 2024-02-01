@@ -21,5 +21,8 @@ function App() {
 
 export default App
 
-//make an edit button 
+//on the basis of which player is playing, we need to  CHANGE THE COLOR of the player heading(player.jsx) 
+// also based on the same value we need to we need to place the value "X" or "O" in the game board 
+
+//this value i.e which player is playing is found in 
 

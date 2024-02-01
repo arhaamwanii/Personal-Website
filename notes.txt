@@ -137,11 +137,21 @@ BUILDING A DYNAMICAL BOARD
 
 
 PUTTING THE MARS IN
+
             -- this is the fuction that will be called in the button and will recive the cordinats of the button we need to change 
           -- as we recieve the value we need to change based off of that we need to create a new state of the intial gameboard whcih we then use to update the ui 
           -- we then use this state and based off of the previous value we change its value in the place where the used clicked
           -- but BUT, we can chang the value of the array or an orbejct based on the previous prctise dirctly but it is not a best Practise 
           -- so we first create a copy of the inital state and then based off of that we  change the value of the state and use that to update the UI... so we first need to make a copy of this to do this
+
+the lesson in this case was that when changing the value of an object or an array we have to do it in such that we first make a copy of the object/array and then use that to make the required changes
+when you need to change the value of the object and the state dont do it directly copy that shi first
+
+
+
+LIFTING STATE UP
+
+
  
 
 

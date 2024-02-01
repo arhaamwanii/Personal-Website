@@ -20,17 +20,6 @@ export const Gameboard = () => {
         });
     }
 
-    const [newGameBoard , setNewGameBoard] = useState(initailGameBoard)
-
-    function handleCordinates(rowIndexRecive , colIndexRecieve){
-           
-        setGameBoard ((inNew) => {
-            copyInNew = [...inNew.map(e => [...e])]
-            copyInNew[rowIndexRecive, colIndexRecieve] = "X"
-            return copyInNew;
-        })        
-
-    }
    
   return (
    <ol id='game-board'>
@@ -85,3 +74,28 @@ export const Gameboard = () => {
 //inside of the same thing we use the inner value of the array to create the coulums
 
 //once we got this arrangemet then we putt the buttons we want to be clicked and represent the value X or 0 inside there, for which we want the default value to be empty
+
+   
+
+
+
+
+
+
+
+// const [newGameBoard , setNewGameBoard] = useState(initailGameBoard)
+
+    // function handleCordinates(rowIndexRecive , colIndexRecieve){
+    //     //this is the fuction that will be called in the button and will recive the cordinats of the button we need to change 
+    //     //  -- as we recieve the value we need to change based off of that we need to create a new state of the intial gameboard whcih we then use to update the ui 
+    //     //  -- we then use this state and based off of the previous value we change its value in the place where the used clicked
+    //     //  -- but BUT, we can chang the value of the array or an orbejct based on the previous prctise dirctly but it is not a best Practise 
+    //     //  -- so we first create a copy of the inital state and then based off of that we  change the value of the state and use that to update the UI... so we first need to make a copy of this to do this
+    
+    //     setGameBoard ((inNew) => {
+    //         copyInNew = [...inNew.map(e => [...e])]
+    //         copyInNew[rowIndexRecive, colIndexRecieve] = "X"
+    //         return vopy 
+    //     })        
+
+    // }
