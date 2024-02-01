@@ -12,14 +12,25 @@ const initailGameBoard = [
 export const Gameboard = () => {
     const [gameBoard , setGameBoard] = useState(initailGameBoard);
 
-    function handleSelectSquare(rowIndex , colIndex){
-        setGameBoard((prevGameBoard) => {
+    function handleSelectSquare(rowIndexRecieve , colIndexRecieve){
+        setGameBoard((prevGameBoard) => { //set game board which contains the copy of the value of the intial gameBoard -- we copy that
             const updatedBoard = [...prevGameBoard.map(innerArray => [...innerArray])]
-            updatedBoard[rowIndex ][colIndex] = 'X'
+            updatedBoard[rowIndexRecieve ][colIndexRecieve] = 'X'//where ever the click has took place change the value of the that place from null to X 
             return updatedBoard;
         });
     }
 
+    const [newGameBoard , setNewGameBoard] = useState(initailGameBoard)
+
+    function handleCordinates(rowIndexRecive , colIndexRecieve){
+           
+        setGameBoard ((inNew) => {
+            copyInNew = [...inNew.map(e => [...e])]
+            copyInNew[rowIndexRecive, colIndexRecieve] = "X"
+            return copyInNew;
+        })        
+
+    }
    
   return (
    <ol id='game-board'>
@@ -36,6 +47,7 @@ export const Gameboard = () => {
    </ol>
   )
 }
+
 
 
 
