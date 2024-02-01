@@ -6,8 +6,8 @@ import { Log } from './Components/Log';
 
 
 function App() {
-  const[gameTurns , setGameTurns] =
-  const [activePlayer , setActivePlayer] = useState('X')
+  // const[gameTurns , setGameTurns] = 
+  const[activePlayer , setActivePlayer] = useState('X')
 
   function handleActivePlayer(){
   setActivePlayer((currentActivePlayer) => currentActivePlayer === 'X' ? "O" : "X")
@@ -15,6 +15,7 @@ function App() {
     const updatedTurns = [{turns}]
   })
   }
+  
 
 
   return (
@@ -49,7 +50,9 @@ export default App
 //HEAD SPACE CALM -- WALK + BANK + COFFE
 //IMAGINE THINKING CUP - REGISTRATION
 //MAKE STUDY PLAN HOW TO FINSSH SYALLIBUS
-//
+
+//in case we need the value from the previos state to update to the new state we shol d
+
 
 
 

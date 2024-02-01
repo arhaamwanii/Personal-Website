@@ -10,16 +10,16 @@ const initialGameBoard=[
 ]
 
 
-//    const [gameBoard , setGameBoard] = useState(initialGameBoard)
+   const [gameBoard , setGameBoard] = useState(initialGameBoard)
 
-//    function handleSelectSquare(rowIndex , colIndex  ){
-//     setGameBoard((prevGameBoard) => {
-//         const updatedBoard = [...prevGameBoard.map(innerArray => [...innerArray])];
-//         updatedBoard[rowIndex][colIndex ] = activePlayerSymbol;
-//         return updatedBoard
-//     } )
-//     onSelectSquare();
-//    }
+   function handleSelectSquare(rowIndex , colIndex  ){
+    setGameBoard((prevGameBoard) => {
+        const updatedBoard = [...prevGameBoard.map(innerArray => [...innerArray])];
+        updatedBoard[rowIndex][colIndex ] = activePlayerSymbol;
+        return updatedBoard
+    } )
+    onSelectSquare();
+   }
   return (
     <>
 
@@ -38,7 +38,7 @@ const initialGameBoard=[
   )
 }
 
-//
+/
 //shit is fucked up less go, the code we wrote in the gameoard if would be written in the app.jsx all the components would have acess to it
 //the highlighted button is not as clean as it
     {/* takes array as an input*/}
