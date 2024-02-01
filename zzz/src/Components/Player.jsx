@@ -53,3 +53,5 @@ if (isEditting){
 //prepopulating the input field  with the current player name
 
 //the ternary ! will flip the value in case of what is before
+
+//react is funndamentally -- does not exicute commands inmmediately it

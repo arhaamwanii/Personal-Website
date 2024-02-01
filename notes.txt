@@ -105,3 +105,10 @@ need to know which player is active in both the
 
 lets say se need to save the data
 
+
+
+
+
+DIFFERENT TRAIL 2
+
+react is not fundametally -- doing any thing new it is just, using the state updation -- what react does it schedules when to execute these commands
