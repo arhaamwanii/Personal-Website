@@ -5,8 +5,8 @@ function App() {
   return (
     <main>
       <div id="game-container">
-      <Player name={"prop one"}/>
-      <Player name={"prop two"}/>
+      <Player intialName={"prop one"}/>
+      <Player intialName={"prop two"}/>
      
       GAME BOARD
       </div>
@@ -17,4 +17,5 @@ function App() {
 
 export default App
 
-//make an edit button and
+//make an edit button 
+

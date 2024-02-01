@@ -112,12 +112,28 @@ lets say se need to save the data
 DIFFERENT TRAIL 2
 
 react is not fundametally -- doing any thing new it is just, using the state updation -- what react does it schedules when to execute these commands
-EG
 
+EG
 major example of this can be seen in just say 
 
 setState(!previousValue)
 setState(!previousValue)
 
 this code will not perform as you might expect it to -- i.e the value will return back to the value what it was before but it changes and dosen  retur back -- in this case react is whenever an callback for an rerender takes palce all the action which are not immediate are sheduled -- and at  the time of sheduling these we dont what or how the value is going to chnage so in that case --- react will chage the value based on the value it was beore not waht it would have been changed to later on -- so in oreder for this to not happen we have to delibretly call for the previous value
+then in that case it will work  -- i.e delibretly calling based on the previous state value
+
+
+here is what happens so first we get the value from the input field by making it call a function ONCHANGE -- once the onchage takes place what happens is the value gets passed to the function which is called from the inside once it recieves the value (which it recieves very frequtly -- every time a chage happens ) -- then we seThe sate of some variable usign this  value and then we use that as an value for Both the INPUT FIELD and the TEXT which is showed after that
+accessing the value inside of a function in case
+
+*we use value inste of deafautl value because -- in case of value state is managed by react, also by default value is uneditable this "value" case but we can make it editabble by using the onChange and then on change we take that value and we give it as an input to the back to the value prop... like that we will be able to see the effects as well* 
+
+TWO WAY BINDING  
+- in this way, we are getting a value out input field(listening to ONCHANGE), also then feeding it back to it, like in this case we feeded it back using a state which we then use to update the value of that VALUE attribute
+
+
+BUILDING A DYNAMICAL BOARD
+-
+
+
 
