@@ -20,10 +20,10 @@ export const Gameboard = () => {
         });
     }
 
-
+   
   return (
    <ol id='game-board'>
-    {initailGameBoard.map((row, rowIndex) => <li key={rowIndex}>
+    {gameBoard.map((row, rowIndex) => <li key={rowIndex}>
         <ol>
             {row.map((col, colIndex)  =>
              <li key={colIndex}>
@@ -41,8 +41,7 @@ export const Gameboard = () => {
 
 //hadleSectSquare, this function is used determine the value which will be shown on to the screen -- and will update the game board based on the prvios state of the gameboard -- in which case it also has to update the value inside of the intial game boad which we build to store the data
 //for this function to do change the value of the inital game board -- it needs to know exactly which value it has to change in that case we need to pass the location of the change which is in this case passed by row and col INDEX
-//updated board which we can go 
-
+//updated board which 
 
 
 //          prevGameBoard[rowIndex ][colIndex]
@@ -51,7 +50,13 @@ export const Gameboard = () => {
 
 // const updatedBoard = [...prevGameBoard.map(innerArray => [...innerArray])]
 ////we got a brand new array with a brand new nested arrays which still stores all the previous values 
-// in this way we are updating the value in an imutable way 
+// in this way we are updating the value in an imutable
+
+//need to update the gameBoard which is the cpy of the inital board based on where the user clicked one click at a time i.e every time a square is clicked based off of its row and col index we need to  update it such that the value stored in the ne instantc or stae 
+
+
+//we take the intial game board we make a copy of it then we use that i.e we have our intial game board then we have which is just full of nulls... what we do is we initailzie a state which is then used in which we we put the itial value to b
+
 
 //while calling a function in an array in which 
 
