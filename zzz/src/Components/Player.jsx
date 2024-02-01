@@ -27,20 +27,20 @@ if (isEditting){
 
   return (
     <div>
-       <ol id="players" >
-      <li>
+
         <span>
           {showField}
           <span className="player-symbol">{symbol} </span>
         </span>
         <button onClick={handleEditClick} >{isEditting ? "Save" : "Edit"}</button>
-      </li>
-      </ol>
+
+    
     </div>
 
     
   )
 }
+
 
 
 //feeding this then back into the elements this in that case --- makes the detault value also haha

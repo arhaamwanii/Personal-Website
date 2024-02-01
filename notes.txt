@@ -133,7 +133,7 @@ TWO WAY BINDING
 
 
 BUILDING A DYNAMICAL BOARD
--
+-we use the coulums and row but insted we use the nested setup of rows and columns where the both of them are represented by the arrays
 
 
 
