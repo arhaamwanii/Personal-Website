@@ -71,7 +71,9 @@ export default App
 
 // putting info in the gameboaed
 //gameboard contaienr already controsl these elements buy they no 
-//one state per ingfo
+//one state per ingfo'
+
+//quick comment stuff
 
 
 
