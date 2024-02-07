@@ -32,6 +32,7 @@ export const Gameboard = ({onSelectSquare , turns }) => {
     //     onSelectSquare()// calling the F in the ancestor/app.jsx file which will switch the value form X to O or otherwise 
     //     //in this code here is the info about which buttons  were clicked and what were there cordinates
     // }
+    //
 
 
 
