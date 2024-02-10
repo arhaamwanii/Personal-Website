@@ -130,9 +130,6 @@ export const Gameboard = ({onSelectSquare , turns }) => {
     // }
     //     connectihg the open ai api with th
 
-    //open code base -- majority is the open code base is the majority.
-    //propority algorithm on top of that
-    // waht
-    //  open source code one a small thing is fucked everything will stop working
+    //      
     
 
