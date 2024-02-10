@@ -128,8 +128,11 @@ export const Gameboard = ({onSelectSquare , turns }) => {
     //     })        
 
     // }
-    //      arham amin wani 
-    //      the quick brown fox jumped right over the lazy dog the quick brown fox jumped right over the lazy dog the quick borwn fox jumped right over the lazy dog. the quick brown fox jumpd right over the lazy dog the quick brown fox jumped the lazy dog the quick brown fox jumped right over the lazy dog the quick 
-    //      in the quick r
+    //     connectihg the open ai api with th
+
+    //open code base -- majority is the open code base is the majority.
+    //propority algorithm on top of that
+    // waht
+    //  open source code one a small thing is fucked everything will stop working
     
 
