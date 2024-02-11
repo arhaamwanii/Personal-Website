@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arhaam Wani</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquerries.css">
+
+    <link rel="icon" href="assets/profile p circle no- bg.png">
+    
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+
+</head>
+<body>   
+    <nav id="desktop-nav">
+        <div class="logo"> <a href="#">Arhaam</a></div>
+        <div>
+            <ul class="nav-links">
+                <!-- "#" is used to create an hyperlink for a page in the same document -->
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#experience">Experience</a></li> -->
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HAM-BURGER -->
+    <!-- this will only bes shown when we add the class  -->
+
+<span id="contacts"></span>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Arhaam</div>
+        <div class="hamburger-menu">
+
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()" >About</a></li>
+                <!-- <li><a href="#experience" onclick="toggleMenu()">Experience</a></li> -->
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+<!-- HERO    BAR -->
+
+    <section id="profile">
+
+        <!-- PROFILE PICTURE -->
+
+        <div class="section__pic-container">
+            <img src="assets/profilep-circle.png" alt="Arhaam Wani Profile picture">
+        </div>
+
+        <!--TEXT -->
+
+        <div class="section__text">
+            <p class="section__text__p1"></p>
+            <h1 class="title"> Arhaam Wanii</h1>
+            <p class="section__text__p2">Full Stack Dev</p>
+        
+        <!-- 2 - BUTTON  -->
+
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="window.open('assets/resume-example.pdf')"> 
+                    @arhaamw
+                </button>
+
+                <button class="btn btn-color-2"> 
+                    <a href="mailto:arhamwani765@gmail.com">Contact Me</a>
+                </button>
+            </div>
+
+        <!-- SOCIAL LINKS -->
+            <div id="socials-container" style="padding-top:20px ;">
+            
+                <img src="assets/github.png" alt="my github profile" class="icon" onclick="location.href='https://github.com/arhaamwanii '" style="cursor: pointer;">
+                <img src="assets/Emblem-Instagram-removebg-preview.png" alt="my instagram profile" class="icon" onclick="window.location.href='https://instagram.com/arhaamwanii/'" style="cursor: pointer;">
+                <img src="assets/x lite circle.png" alt="my twitter profile picture" class="icon" onclick="window.location.href='https://twitter.com/arhaamwanii/'" style="cursor: pointer;">
+                
+            </div>
+        </div>
+    </section>
+
+
+<!-- ABOUT SECTION -->
+
+
+    <div class="align">
+        <p class="section__text__p1"> <!--TEXT ABOVE ABOUT ME-->   </p>
+        <h1 class="title">About Me</h1>
+    </div> 
+
+<section id="about">
+ 
+    <div class="section-container">
+        <!-- <div class="section__pic-container">
+            <img src="assets/about-pic.png" alt="Profile Picture" class="about-pic">
+        </div> -->
+
+        <img src="assets/head cage art bg remove.png" alt="">
+
+
+       <div class="about-details-container">
+            <div class="about-containers">
+                <!-- time -->
+                <div class="details-container" style="width: 10rem;">
+                    <img src="assets/clock icon .webp" alt="experience icon" class="icon">
+                    <h3>    <div id="time"></div></h3>
+                    <p><br>My Time<br>📍INDIA  </p>
+                </div>
+                <!-- collabration open -->
+                <div class="details-container">
+                    <img src="assets/experience.png" alt="experience icon" class="icon">
+                    <h3>Open For Collabrations</h3>
+                    <p><br>Always Available on  Discord  <br> </p>
+                </div>
+                <!-- experience -->
+                <div class="details-container">
+                    <img src="assets/experience.png" alt="experience icon" class="icon">
+                    <h3>Experience</h3>
+                    <p><br>3 Months<br><br>Straight Up 18 hr's a day <br></p>
+                </div>
+
+            </div>
+            <div class="text-container">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, delectus a eos dolor consequatur pariatur voluptatum exercitationem dolorum sint suscipit quas perferendis placeat ut, adipisci praesentium quos ex, magnam voluptate? Sint laborum voluptatum vero numquam, minima et rerum in sapiente ipsum soluta temporibus cupiditate autem veritatis, ea consequuntur, doloribus voluptatibus!
+            </div>
+       </div> 
+    </div>
+    <!--next page arrow  -->
+
+    <img src="assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='#contact'">
+
+</section>
+
+<!-- EXPERIENCE -->
+
+
+<!-- <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+
+    <div class="experience-details-containers">
+        <div class="about-containers">
+            <div class="details-container">
+                <h2 class="experience-sub-title">FronEnd Devloper</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="" alt="">
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+
+
+<!-- PROJECTS SECTION -->
+<!-- arham ami  -->
+
+
+<div class="space">     </div>
+
+<div class="align">  
+    <p class="section__text__p1">Browse My Recents</p>
+    <h1 class="title">Projects</h1>
+</div>
+
+    <section id="projects">
+ 
+
+        <div class="experience-details-container">
+            
+            
+        <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="assets/project-1.png" alt="project-1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project One</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="assets/project-2.png" alt="project-1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project Two</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="assets/project-3.png" alt="project-1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project Three</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-1 project-btn" onclick="location.href='https://github.com'">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+
+        </div>
+                <img src="assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='#contact'">
+        </div>
+    </section>
+
+    <!-- CONTACT - ->
+         -->
+    <!--  -->
+    <!--  -->
+
+    <span id="contact"></span>
+
+    <div class="align">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1>Contact Me</h1>
+    </div>
+
+    <!-- arha -->
+    
+
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="assets/email.png" alt="mail icon" class="icon contact-icon">
+                <p><a href="mailto:arhaaamw@gmail.com">arhaaamw@gmail.com</a></p>
+            </div>
+        <!-- </div> -->
+
+        <!-- <div class="contact-info-upper-container"> -->
+
+            <div class="contact-info-container">
+                <img src="assets/discord logo balck.webp" alt="discord icon" class="icon contact-icon">
+                <p><a style="margin-left: 4px;" href="https://github.com/arhaamwanii">@arhaamw</a></p>
+            </div>
+        </div>
+
+
+    <footer class="align" style="margin-top: 6rem;"> <p> by - Arhaam</p></footer>
+
+
+
+    <div id="time"></div>
+
+    
+    <script src="index.js"></script>
+
+</body>
+</html>
